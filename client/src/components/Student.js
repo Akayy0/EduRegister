@@ -26,6 +26,7 @@ export default function Student() {
                 throw new Error('Failed to add new student');
             }
             console.log("New Student added");
+            window.location.reload();
         } catch (error) {
             console.error('Error adding new student:', error);
         }
